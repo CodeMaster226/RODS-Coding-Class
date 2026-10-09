@@ -40,8 +40,20 @@ function App() {
 
   let sum: number = Multiply(5, 10);
 
-  return printScore("Apple");
+  return (
+    <div>
+      <div>
+      <label>Name:</label>
+      <input></input>
+      </div>
+      <div>
+      <button>Submit</button>
+      </div>
+    </div>
+  )
+
 }
+
 
 //Loop #1 - start -- > Loops = 0, 0 < 3 = true, end -- > loops = 1
 //Loop #2 - start -- > Loops = 1, 1 < 3 = true, end -- > loops = 2
