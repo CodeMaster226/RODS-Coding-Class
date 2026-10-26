@@ -1,25 +1,35 @@
 label { 
-  color: darkgreen;
+  color: #CCFF00;
+  font-weight: bold;
+  font-size: 25px;
 }
 
 form {
-  background-color: navy;
+  background-color: #121418;
+  position: absolute !important; /* Allows the form to grow with scrolling */
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  min-height: 100vh !important;  /* Takes up at least the full screen, but can grow longer */
+  margin: 0 !important;
+  padding: 20px;
+  box-sizing: border-box !important;
+  overflow-y: auto !important;  
 }
 
 button {
-color: white;
-background: darkred;
-
+  color: #121418;
+  background: #CCFF00;
 }
 
 button:hover {
-background: orange;
+  background: #A3CC00;
 }
 
 input:focus-visible,
 button:focus-visible,
 select:focus-visible {
-  outline: 1px solid red;
+  outline: 1px solid #CCFF00;
   outline-offset: 1px;
 } 
 
@@ -27,14 +37,24 @@ input, select {
   padding: 8px;
   margin: 5px;
 
-  border: 1px solid silver;
+  border: 1px solid #2D3748;
   border-radius: 10px;
 }
 
 table {
   width: 100%;
 }
+
 th, td {
-  border: 1px solid gray;
+  background-color: #313745;
+  color: #FFFFFF;
+  border: 1px solid #2D3748;
   text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+/* Smooth hover effect that keeps text white and uses a subtle dark tint */
+tr:hover td {
+  background-color: #1e242d;
+  color: #FFFFFF;
 }
